@@ -1,0 +1,494 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#redes {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#fb {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ig {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#yt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#redes {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 30%;
+	display: block;
+}
+#fb {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#ig {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#yt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: white;
+	margin-bottom: 8px;
+}
+#logo {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 30%;
+	display: block;
+	border-radius: 2%;
+}
+#title {
+	clear: none;
+	float: left;
+	margin-left: 0px;
+	width: 30%;
+	display: block;
+	font-size: 50px;
+	margin-top: 50px;
+	margin-left: 125px;
+}
+#redes {
+	clear: none;
+	float: right;
+	margin-left: 2%;
+	padding-right:-1%;
+	width: 20%;
+	display: block;
+	margin-top: 50px;
+}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 24%;
+	display: block;
+}
+#ig {
+	clear: none;
+	float: left;
+	margin-left: 1%;
+	width: 27%;
+	display: block;
+}
+#yt {
+	clear: none;
+	float: left;
+	margin-left: 1%;
+	width: 27%;
+	display: block;
+}
+
+#menu {
+	margin-bottom: 8px;
+	
+}
+
+#banner {
+	width: 1175px;
+	height: 325px;
+	background-color: rgb(245, 240, 240);
+	
+}
+
+#bannerServicios{
+	width: 1190px;
+	height: 325px;
+	
+}
+
+#productos {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 0%;
+	width: 920px;
+	margin-left: 78px;
+}
+
+#p1 {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 0%;
+	width: 455px;
+	
+	
+}
+
+#p2 {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 1%;
+	width: 455px;
+	
+}
+
+#p3 {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 0%;
+	width: 455px;
+	
+}
+
+#p4 {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 1%;
+	width: 455px;
+	
+}
+
+#promocion {
+	clear: none;
+	display: block;
+	float: left;
+	width: 245px;
+	height: 500px !important;
+	margin-left: 10px !important;
+	
+}
+
+#dl1, #dl2, #dl3, #dl4 {
+	clear: none;
+	display: block;
+	float: left;
+	margin-left: 0%;
+	width: 455px;
+	background-color:#000;
+	color:#FFF;
+	text-align:center;
+	height:40px
+}
+
+#dl1, #dl2 { 
+	margin-top: -4px;
+	margin-bottom: 8px;
+
+}
+#dl3, #dl4
+{ 
+	margin-top: -4px;
+	margin-bottom: 8px;
+
+}
+
+.margenArriba{ 
+	margin-top: 9px;
+
+}
+
+#footer { 
+margin-top: -100px !important;
+margin-left: 78px;
+width: 1175px;
+
+}
+
+/*Aquí el código de la pagina de nosotros*/
+
+.body-paginas{
+	width: 88.1%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	margin-top: 7px;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+.hero{
+    height: 575px;
+	width: 100%;
+    background-image: url(../img/imagenPrincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: gray;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+
+
+}
+.event-list-title{
+    margin-left: 10px;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    margin: 10px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+figure{
+    margin: 0;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+event-detail{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto 0;
+    margin-top: 10px;
+}
+
+.containerNosotros{
+	width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+	margin-left: 150px;
+}
+
+.informacionNosotros{
+	background-color: aquamarine;
+	height: 100px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+	
+}
+.informacionNosotrosParrafo{
+	padding-top: 23px;
+}

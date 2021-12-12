@@ -1,0 +1,133 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sin título</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- 
+Para obtener más información sobre los comentarios condicionales situados alrededor de las etiquetas html en la parte superior del archivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+  
+Haga lo siguiente si usa su compilación personalizada de modernizr (http://www.modernizr.com/):
+* inserte el vínculo del código js aquí
+* elimine el vínculo situado debajo para html5shiv
+* añada la clase "no-js" a las etiquetas html en la parte superior
+* también puede eliminar el vínculo con respond.min.js si ha incluido MQ Polyfill en su compilación de modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<style type="text/css">
+	body {
+	background-repeat: repeat;
+}
+    </style>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>	
+
+</head>
+<body background= "img/imweb.jpg">
+<div class="gridContainer clearfix">
+
+<div id="header">
+  
+  <div id="logo"><img src="img/logoooo.png" alt="logo" width="182" height="136"></div>
+    
+  <div id="title">Puma store</div>
+    
+  <div id="redes">
+    
+      <div id="fb"><a href="https://facebook.com" target="_blank"><img src="img/Diseño sin título.png" alt="ig-icono" width="150px"> </a></div>
+      <div id="ig"><a href="https://youtube.com" target="_blank"><img src="img/IGO.png" alt="fb-icono" width="200px"> </a></div>
+      <div id="yt"><a href="https://youtube.com" target="_blank"><img src="img/YTO.png" alt="yt-icono" width="150px"> </a></div>
+      
+  </div>
+</div>
+  
+  <div id="menu">
+  
+    <div id='cssmenu'>
+        <ul>
+           <li class='active'><a href='index.html'>Inicio</a></li>
+           <li><a href='nosotros.html'>Nosotros</a></li>
+           <li><a href='servicios.html'>Servicios</a></li>
+           <li><a href='#'>Galeria</a></li>
+           <li><a href='#'>Contacto</a></li>
+           
+      </ul>
+    </div>
+  
+  </div>
+  
+  <div id="bannerServicios">
+        <img src="img/PUMA STORE.gif"" width="">
+    </div>
+
+  
+  
+  </div>
+  
+  <div id="productos">
+  	  
+      <div id="p1"><img src="img/blanco.jpg" alt="producto1">
+      	<div id="dl1"> <p class="margenArriba">Puma write tomo 1</p></div>
+      </div>
+      <div id="p2"><img src="img/rosado.jpg" alt="producto2">
+      	<div id="dl2"> <p class="margenArriba"> Puma light pink tomo 2 </p></div>
+      </div>
+      <div id="p3"><img src="img/amarillo.jpg" alt="producto3">
+      	<div id="dl3"> <p class="margenArriba">Puma yellow toma 3</p></div>
+      </div>
+      <div id="p4"><img src= "img/PUMA.jpg"alt="producto4">
+      	<div id="dl4">  <p class="margenArriba">Puma negro nuevo estilo</p></div>
+      </div>
+  
+  </div>
+  
+  <div id="promocion"><img src="img/NUEVO DISEÑO.gif" alt="rebajas-aside" height="588px"></div>
+  
+  <div id="footer">
+  
+  	<img src="img/FOOTER2.png" alt="footer">
+  
+  </div>
+  
+  
+  
+  
+</div>
+  
+  <script src="js/jquery-latest.min.js">
+  
+  </script>
+  
+   <script src="js/script.js">
+  
+  </script>
+  
+</body>
+</html>
